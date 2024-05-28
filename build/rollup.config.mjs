@@ -2,6 +2,7 @@ import progress from 'rollup-plugin-progress'; // 展示进度
 import resolve from '@rollup/plugin-node-resolve';  // 你的包用到第三方npm包
 import typescript from 'rollup-plugin-typescript2'; // 处理typescript
 import commonjs from '@rollup/plugin-commonjs'; // 你的包用到的第三方只有commonjs形式的包
+import { terser } from 'rollup-plugin-terser'; // Minify a bundle using Terser.
 
 export default {
     input: 'src/index.ts',
@@ -29,6 +30,7 @@ export default {
           }),
         resolve(),
         commonjs(),
+        terser(),
         typescript({
             tsconfig: 'tsconfig.json'
         }),
