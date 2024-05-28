@@ -1,7 +1,7 @@
 {
   "name": "submit-diff",
   "version": "0.0.3",
-  "description": "",
+  "description": "json diff",
   "main": "dist/index.umd.js",
   "files": [
     "dist"
@@ -11,15 +11,29 @@
     "build": "rollup -c build/rollup.config.mjs",
     "release": "npm version patch && npm publish"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "keywords": [
+    "json-diff",
+    "diff",
+    "对比",
+    "json对比",
+    "submit-diff"
+  ],
   "author": "jiamengda",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/lodash": "^4.17.4",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "rollup": "^4.18.0",
     "rollup-plugin-progress": "^1.1.2",
     "rollup-plugin-terser": "^7.0.2",
