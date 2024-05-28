@@ -11,11 +11,14 @@
     "build": "rollup -c build/rollup.config.mjs",
     "release": "npm version patch && npm publish"
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeamd/form-diff.git"
   },
+  "bugs": {
+    "url": "https://github.com/Jeamd/form-diff/issues"
+  },
+  "homepage": "https://github.com/Jeamd/form-diff#readme",
   "keywords": [
     "json-diff",
     "diff",
@@ -32,8 +35,6 @@
     "@rollup/plugin-commonjs": "^25.0.8",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/lodash": "^4.17.4",
-    "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0",
     "rollup": "^4.18.0",
     "rollup-plugin-progress": "^1.1.2",
     "rollup-plugin-terser": "^7.0.2",
