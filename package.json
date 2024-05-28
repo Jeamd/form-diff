@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.umd.js",
+  "files": ["dist"],
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rollup -c build/rollup.config.mjs"
+    "build": "rollup -c build/rollup.config.mjs",
+    "release": "npm version patch && npm publish"
   },
   "author": "jiamengda",
   "license": "ISC",
