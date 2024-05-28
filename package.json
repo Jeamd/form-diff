@@ -1,6 +1,6 @@
 {
   "name": "submit-diff",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "json diff",
   "main": "dist/index.umd.js",
   "files": [
