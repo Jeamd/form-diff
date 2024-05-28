@@ -9,7 +9,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c build/rollup.config.mjs",
-    "release": "npm version patch && npm publish"
+    "patch": "npm version patch && git push origin --tags"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Jeamd/form-diff/issues"
   },
-  "homepage": "https://github.com/Jeamd/form-diff#readme",
+  "homepage": "https://github.com/Jeamd/form-diff",
   "keywords": [
     "json-diff",
     "diff",
